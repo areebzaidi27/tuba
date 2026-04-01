@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Love ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+</head>
+<body>
+
+<audio id="bgMusic" loop src="music.mp3"></audio>
+<audio id="popSound" src="pop.mp3"></audio>
+
+<canvas id="hearts"></canvas>
+
+<!-- PAGE 1 -->
+<section class="page active" id="page1">
+  <h1 id="typewriter"></h1>
+  <button class="love-btn" onclick="startExperience()">Start ❤️</button>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page" id="page2">
+
+  <div class="glass-card">
+    
+    <div class="navbar">
+      <span>HOME</span>
+      <span>MEMORIES</span>
+      <span class="active">BALLOONS</span>
+      <span>MESSAGE</span>
+    </div>
+
+    <h1>Pop the <span class="pink">Balloons!</span> 🎈</h1>
+    <p>Click each balloon to reveal a surprise message.</p>
+
+    <div class="content">
+      <div class="message-box" id="messageBox">
+        <p>Click a balloon 💖</p>
+      </div>
+      <div class="balloons" id="balloons"></div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PAGE 3 -->
+<section class="page" id="page3">
+  <h1>My Best Memories from the pictures u have sended 💖</h1>
+
+  <div class="gallery">
+    <img src="tuba1.jpeg">
+    <img src="tuba2.jpeg">
+    <img src="tuba3.jpeg">
+    <img src="tuba4.jpeg">
+    <img src="tuba5.jpeg">
+    <img src="tuba6.jpeg">
+    <img src="tuba7.jpeg">
+    <img src="tuba8.jpeg">
+    <img src="tuba9.jpeg">
+    <img src="tuba10.jpeg">
+  </div>
+  <div class="lightbox" id="lightbox">
+  <img id="lightboxImg">
+</div>
+
+<button class="love-btn" onclick="showFinalMessage()">Final Message 💌</button>
+</section>
+
+<!-- FINAL MESSAGE -->
+<div class="final-popup" id="finalPopup">
+  <div class="letter">
+    <h2>💌 My Love Tuba</h2>
+    <p>
+      From the moment you came into my life, everything became beautiful ❤️<br><br>
+      You are my happiness, my peace, my everything 💖<br><br>
+  
+    </p>
+    <button class="love-btn" onclick="closePopup()">Close 💕</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
